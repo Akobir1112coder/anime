@@ -12,6 +12,7 @@ img {
 span, a, label {
     display: inline-block;
 }
+
 .asosiy{
     height: 100vh;
     background-color: aqua;
@@ -62,5 +63,73 @@ animation-delay: 0.8s;
   100%{transform: translate(200px) scale(0);
 opacity: 0;
 
+  }
+}
+@media(max-width:1200px){
+  
+@keyframes yurish{
+  0%{
+    transform: translate(-100px) scale(0);
+    opacity: 0;
+
+  }
+  
+  25%{
+    transform: translate(-250px) scale(0.7) ;
+    opacity: 0.4;
+
+  }
+  50%{
+    transform: translate(100px) scale(1);
+    opacity: 1;
+
+  }
+  75%{
+    transform: translate(300px) ;
+    opacity: 1;
+  }
+  100%{transform: translate(100px) scale(0);
+opacity: 0;
+
+  }
+}
+.div1{
+  width: 150px;
+  height: 150px;
+}
+}
+@media(max-width:600px){
+  .asosiy{
+    padding: 150px 300px;
+  }  
+  @keyframes yurish{
+    0%{
+      transform: translate(-150px) scale(0);
+      opacity: 0;
+  
+    }
+    
+    25%{
+      transform: translate(-200px) scale(0.7) ;
+      opacity: 0.4;
+  
+    }
+    50%{
+      transform: translate(50px) scale(1);
+      opacity: 1;
+  
+    }
+    75%{
+      transform: translate(150px) ;
+      opacity: 1;
+    }
+    100%{transform: translate(50px) scale(0);
+  opacity: 0;
+  
+    }
+  }
+  .div1{
+    width: 50px;
+    height: 50px;
   }
 }
