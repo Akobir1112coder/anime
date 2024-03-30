@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+span, a, label {
+    display: inline-block;
+}
+.asosiy{
+    height: 100vh;
+    background-color: aqua;
+    position: relative;
+    padding: 250px 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+
+}
+.div1{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: absolute;
+border-radius: 50%;
+
+animation: yurish 1.5s linear  infinite;
+opacity: 0;
+
+}
+.asosiy div:nth-child(2){
+opacity: 0;
+animation-delay: 0.8s;
+}
+
+@keyframes yurish{
+  0%{
+    transform: translate(-200px) scale(0);
+    opacity: 0;
+
+  }
+  
+  25%{
+    transform: translate(-400px) scale(0.7) ;
+    opacity: 0.4;
+
+  }
+  50%{
+    transform: translate(200px) scale(1);
+    opacity: 1;
+
+  }
+  75%{
+    transform: translate(500px) ;
+    opacity: 1;
+  }
+  100%{transform: translate(200px) scale(0);
+opacity: 0;
+
+  }
+}
